@@ -1,4 +1,4 @@
 # macsmaxlb
 
-TODO: Enter the cookbook description here.
+This cookbook installs nginx and creates the nginx.conf via template
 
