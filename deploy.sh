@@ -13,7 +13,7 @@ fi
 function deployapp {
 
 	#pull the repo
-	#git pull
+	git pull
 	
 	#Build the docker containers images
 	for i in app ; do
