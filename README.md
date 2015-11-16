@@ -28,7 +28,7 @@ The *deploy.sh* script will take care of deploying, upgrading and removing the d
 
 Usage:
 ```
-ngardini@macsmac: /data01/scratch/git/github_macsmax/test ]$ ./deploy.sh
+$ ./deploy.sh
 Usage: ./deploy.sh {deploy|upgrade|cleanup|status}
 ```
 
