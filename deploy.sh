@@ -41,7 +41,10 @@ function deploylb {
 	sleep 1
 	docker build -t lb ./
 	cd -
-	docker run -d -p ${PORT}:80 --link app1 --link app2 --name lb lb
+	for a in `seq 1 $NAPPS` ; do 
+		LINKAPP="$LINKAPP --link app${a} "
+	done
+	docker run -d -p ${PORT}:80 $LINKAPP --name lb lb
 }
 
 function test {	
